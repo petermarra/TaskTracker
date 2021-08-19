@@ -11,6 +11,7 @@ export class UiService {
   constructor() { }
 
   toggleAddTask(): void {
+    console.log('uiservice toggle');
     this.showAddTask = !this.showAddTask;
     this.subject.next(this.showAddTask);
   }
